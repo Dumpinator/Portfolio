@@ -1,4 +1,20 @@
 body {
-  color: #6a6868; }
+  color: #6a6868;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 1024px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+.project_img {
+  width: 100%;
+  height: auto; }
+
+h2 {
+  margin: 0;
+  padding: 0;
+  color: #454141; }
 
 /*# sourceMappingURL=style.css.map */

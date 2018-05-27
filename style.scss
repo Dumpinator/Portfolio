@@ -1,3 +1,25 @@
+$colorGrey1: #6a6868;
+$colorGrey2: #454141;
+
 body {
-	color: #6a6868;
+	color: $colorGrey1;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1024px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.project_img {
+	width: 100%;
+	height: auto;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	color: $colorGrey2;
 }
