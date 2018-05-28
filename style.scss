@@ -7,10 +7,33 @@ body {
 	padding: 0;
 }
 
+h2 {
+	margin: 0;
+	padding: 0;
+	color: $colorGrey2;
+}
+
+.project_name::after {
+	content: counter(portfolio);
+}
+
+.portfolio {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 20px;
+
+	grid-auto-flow: row dense;
+	counter-reset: portfolio;
+}
+
 .container {
 	max-width: 1024px;
 	padding: 0 20px;
 	margin: 0 auto;
+}
+
+.project_name {
+	margin-left: 10px;
 }
 
 .project_img {
@@ -18,8 +41,21 @@ body {
 	height: auto;
 }
 
-h2 {
-	margin: 0;
-	padding: 0;
-	color: $colorGrey2;
+.projects {
+	counter-increment: portfolio;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+
+.projects .project_body {
+	display: none;
+}
+
+@media screen and (min-width: 640px) {
+	.portfolio {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.project_body {
+		grid-column: span 4;
+	}
 }
