@@ -1,27 +1,46 @@
-$colorGrey1: #6a6868;
-$colorGrey2: #454141;
+$darkImperialBlue: #004E64;
+$magicMint: #9FFFCB;
+$pastelGreen : #7AE582;
+$cerulean : #007EA7;
+$prussianBlue : #003249;
+$black : #151000;
+$grey : #ccc;
+$white : #FFF;
+
 
 body {
-	color: $colorGrey1;
+	background-color: #f9f9f9;
 	margin: 0;
 	padding: 0;
 }
 
 h2 {
-	margin: 0;
+
+	margin: 0.7em;
 	padding: 0;
-	color: $colorGrey2;
+	color: $black;
+}
+
+p {
+	color: $grey;
+}
+
+.project_description {
+	margin: 1em;
 }
 
 .project_name::after {
 	content: counter(portfolio);
 }
 
+.project_body {
+	overflow: hidden;
+}
+
 .portfolio {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-column-gap: 20px;
-
 	grid-auto-flow: row dense;
 	counter-reset: portfolio;
 }
@@ -32,10 +51,6 @@ h2 {
 	margin: 0 auto;
 }
 
-.project_name {
-	margin-left: 10px;
-}
-
 .project_img {
 	width: 100%;
 	height: auto;
@@ -43,12 +58,22 @@ h2 {
 
 .projects {
 	counter-increment: portfolio;
-	margin-bottom: 50px;
+	margin-top: 50px;
 	cursor: pointer;
+	border-radius: 0 0 15px 15px;
+	background-color: $white;
+	box-shadow: 0 1px 2px rgba(25,25,25,0.2);
 }
 
 .projects .project_body {
 	display: none;
+}
+
+.project_body {
+	margin: 1em 0em;
+	padding: 1em;
+	background-color: #FFF;
+	border-radius: 15px;
 }
 
 @media screen and (min-width: 640px) {
