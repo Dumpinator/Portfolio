@@ -1,39 +1,57 @@
-nav {
-  width: 100%;
-  background-color: #2b2b2b; }
-  nav ul {
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden; }
-  nav li {
-    list-style-type: none;
-    float: left; }
-    nav li:hover a {
-      padding: 15px 30px 15px 30px; }
-  nav a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 20px 30px;
-    color: #FFF; }
-
 body {
   background-color: #f9f9f9;
   margin: 0;
   padding: 0; }
 
 h2 {
-  margin: 0.7em;
-  padding: 0;
+  margin: 0 0.7em;
+  padding: 0.5em;
   color: #151000; }
 
 p {
   color: #ccc; }
 
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #2b2b2b; }
+  nav ul {
+    margin: 0px;
+    padding: 0px; }
+  nav li {
+    list-style-type: none;
+    float: left; }
+    nav li:hover a {
+      padding: 15px 30px 20px 30px; }
+  nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: #FFF; }
+
+.test {
+  width: 100%;
+  height: 60px;
+  margin-top: 30px;
+  background-color: #D9D1CD;
+  border-radius: 15px 15px 0 0; }
+
+.patch {
+  margin-top: 0px;
+  border-radius: 0 0 15px 15px; }
+
+.description {
+  height: 500px;
+  background-color: #FFF;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 1px 2px rgba(25, 25, 25, 0.2); }
+
+.about-descr {
+  padding: 1em;
+  color: #151000; }
+
 .project_description {
   margin: 1em; }
-
-.project_name::after {
-  content: counter(portfolio); }
 
 .project_body {
   overflow: hidden; }
@@ -42,8 +60,7 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 20px;
-  grid-auto-flow: row dense;
-  counter-reset: portfolio; }
+  grid-auto-flow: row dense; }
 
 .container {
   max-width: 1024px;
@@ -55,7 +72,6 @@ p {
   height: auto; }
 
 .projects {
-  counter-increment: portfolio;
   margin-top: 50px;
   cursor: pointer;
   border-radius: 0 0 15px 15px;
