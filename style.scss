@@ -59,14 +59,14 @@ nav {
 	height: 60px;
 	margin-top: 30px;
   background-color: #D9D1CD;
-	border-radius: 0 0 15px 15px;
+	border-radius: 15px 15px 0 0;
 }
-
+/*
 .patch {
 	margin-top: 0px;
 	border-radius: 0 0 15px 15px;
 }
-
+*/
 .description {
 	position: relative;
 	z-index: 1;
@@ -119,7 +119,7 @@ footer {
 
 .projects {
 	//counter-increment: portfolio;
-	margin-top: 50px;
+	margin-top: 20px;
 	cursor: pointer;
 	border-radius: 0 0 15px 15px;
 	background-color: $white;
