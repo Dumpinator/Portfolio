@@ -1,20 +1,20 @@
 body {
-  background-color: #f9f9f9;
+  background-color: #2C324F;
   margin: 0;
   padding: 0; }
 
 h2 {
   margin: 0 0.7em;
   padding: 0.5em;
-  color: #151000; }
+  color: black; }
 
 p {
-  color: #ccc; }
+  color: #E3E3E3; }
 
 nav {
   width: 100%;
   height: 60px;
-  background-color: #2b2b2b; }
+  background-color: #1F253E; }
   nav ul {
     margin: 0px;
     padding: 0px; }
@@ -27,8 +27,63 @@ nav {
     display: inline-block;
     text-decoration: none;
     padding: 20px 30px;
-    color: #FFF; }
+    color: #E3E3E3; }
 
+.message {
+  display: flex;
+  align-items: center; }
+
+.message .avatar {
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid #E3E3E3;
+  box-shadow: 0 3px 8px 0 #21BFD7;
+  margin: 20px 20px; }
+
+.message .text {
+  background: #E3E3E3;
+  color: black;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px 8px 8px 0;
+  padding: 10px 20px;
+  text-align: left;
+  max-width: 300px;
+  margin: 0; }
+
+.message-1 {
+  position: absolute;
+  top: 20px;
+  left: 30px; }
+
+.bubble-spinner > div {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both; }
+
+.bubble-spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s; }
+
+.bubble-spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s; }
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1); } }
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 .category {
   position: relative;
   z-index: 2;
@@ -38,30 +93,24 @@ nav {
   background-color: #D9D1CD;
   border-radius: 15px 15px 0 0; }
 
-/*
-.patch {
-	margin-top: 0px;
-	border-radius: 0 0 15px 15px;
-}
-*/
 .description {
   position: relative;
   z-index: 1;
   height: 500px;
   margin-top: -15px;
-  background-color: #FFF;
+  background-color: #E3E3E3;
   border-radius: 0 0 15px 15px;
   box-shadow: 0 1px 2px rgba(25, 25, 25, 0.2); }
 
 .about-descr {
   padding: 1em;
-  color: #151000; }
+  color: black; }
 
 footer {
   margin-top: 50px;
   width: 100%;
   height: 60px;
-  background-color: #2b2b2b; }
+  background-color: #1F253E; }
 
 .project_description {
   margin: 1em; }
@@ -78,7 +127,7 @@ footer {
 .container {
   max-width: 1024px;
   padding: 0 20px;
-  margin: 0 auto; }
+  margin: 100px auto; }
 
 .project_img {
   width: 100%;
