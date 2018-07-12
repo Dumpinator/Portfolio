@@ -1,3 +1,5 @@
+//////// GRID PORTFOLIO //////////
+
 class Portfolio {
 
 	constructor (selector) {
@@ -71,5 +73,21 @@ class Portfolio {
 		})
 	}
 }
+
+//////// FRONT ////////
+
+window.sr = ScrollReveal({ reset: false });
+sr.reveal('.foo', { origin: 'left',
+										duration: 2000 });
+
+let monSecret1 = document.querySelector('.secret')
+let monTest = document.querySelector('.text')
+
+window.setTimeout(removeSecret, 2000)
+
+function removeSecret() {
+  monSecret1.classList.remove('secret')
+  monTest.classList.add('secret')
+  }
 
 new Portfolio ('#js-portfolio')

@@ -22,12 +22,14 @@ body {
 }
 
 h2 {
+	font-family: 'Lato', sans-serif;
 	margin: 0 0.7em;
 	padding: 0.5em;
 	color: black;
 }
 
 p {
+	font-family: 'Lato', sans-serif;
 	color: $beige;
 }
 
@@ -54,26 +56,27 @@ nav {
     text-decoration: none;
     padding: 20px 30px;
     color: $beige;
+		font-family: 'Lato', sans-serif;
   }
 }
 
 .message {
 	display: flex;
   align-items: center;
+	background-color: $grey3;
 }
 
 .message .avatar {
 	width: 60px;
 	border-radius: 50%;
 	border: 2px solid $beige;
-	box-shadow: 0 3px 8px 0 $blue1;
 	margin: 20px 20px;
 }
 
 .message .text {
 	background: $beige;
 	color: black;
-	box-shadow: 0 3px 8px 0 rgba(0,0,0,0.1);
+	box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 8px 8px 8px 0;
 	padding: 10px 20px;
 	text-align: left;
@@ -81,13 +84,17 @@ nav {
 	margin: 0;
 }
 
+.secret {
+	display: none;
+}
+
 .message-1 {
-		position: absolute;
+		position: static;
 		top: 20px;
 		left: 30px;
 }
 
-/// anim bubble ///
+/// animation points discution ///
 
 .bubble-spinner > div {
   width: 10px;
@@ -161,8 +168,15 @@ footer {
 
 /////////////////////////////////////////////////////////////////
 
+.container {
+	max-width: 1024px;
+	padding: 20px 20px;
+	margin: 20px auto;
+}
+
 .project_description {
 	margin: 1em;
+	font-family: 'Lato', sans-serif;
 }
 
 .project_body {
@@ -174,12 +188,6 @@ footer {
 	grid-template-columns: 1fr;
 	grid-column-gap: 20px;
 	grid-auto-flow: row dense;
-}
-
-.container {
-	max-width: 1024px;
-	padding: 0 20px;
-	margin: 100px auto;
 }
 
 .project_img {

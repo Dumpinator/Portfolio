@@ -4,11 +4,13 @@ body {
   padding: 0; }
 
 h2 {
+  font-family: 'Lato', sans-serif;
   margin: 0 0.7em;
   padding: 0.5em;
   color: black; }
 
 p {
+  font-family: 'Lato', sans-serif;
   color: #E3E3E3; }
 
 nav {
@@ -27,31 +29,35 @@ nav {
     display: inline-block;
     text-decoration: none;
     padding: 20px 30px;
-    color: #E3E3E3; }
+    color: #E3E3E3;
+    font-family: 'Lato', sans-serif; }
 
 .message {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  background-color: #858AA0; }
 
 .message .avatar {
   width: 60px;
   border-radius: 50%;
   border: 2px solid #E3E3E3;
-  box-shadow: 0 3px 8px 0 #21BFD7;
   margin: 20px 20px; }
 
 .message .text {
   background: #E3E3E3;
   color: black;
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px 8px 8px 0;
   padding: 10px 20px;
   text-align: left;
   max-width: 300px;
   margin: 0; }
 
+.secret {
+  display: none; }
+
 .message-1 {
-  position: absolute;
+  position: static;
   top: 20px;
   left: 30px; }
 
@@ -112,8 +118,14 @@ footer {
   height: 60px;
   background-color: #1F253E; }
 
+.container {
+  max-width: 1024px;
+  padding: 20px 20px;
+  margin: 20px auto; }
+
 .project_description {
-  margin: 1em; }
+  margin: 1em;
+  font-family: 'Lato', sans-serif; }
 
 .project_body {
   overflow: hidden; }
@@ -123,11 +135,6 @@ footer {
   grid-template-columns: 1fr;
   grid-column-gap: 20px;
   grid-auto-flow: row dense; }
-
-.container {
-  max-width: 1024px;
-  padding: 0 20px;
-  margin: 100px auto; }
 
 .project_img {
   width: 100%;
