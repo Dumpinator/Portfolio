@@ -10,9 +10,6 @@ $green : #21D78F;
 $grey3 : #858AA0;
 $red : #D01B1B;
 
-$grey : #ccc;
-$white : #FFF;
-
 /// General ///
 
 body {
@@ -21,16 +18,10 @@ body {
 	padding: 0;
 }
 
-h2 {
+h1, h2, h3, h4, h5, p {
 	font-family: 'Lato', sans-serif;
-	margin: 0 0.7em;
-	padding: 0.5em;
-	color: black;
-}
-
-p {
-	font-family: 'Lato', sans-serif;
-	color: $beige;
+	margin: 0;
+	padding: 0;
 }
 
 /// Nav bar ///
@@ -59,6 +50,15 @@ nav {
 		font-family: 'Lato', sans-serif;
   }
 }
+
+footer {
+	margin-top: 50px;
+	width: 100%;
+	height: 60px;
+  background-color: $grey2;
+}
+
+//////// category ///////
 
 .message {
 	display: flex;
@@ -134,53 +134,10 @@ nav {
 
 /// design grille Portofolio ///
 
-.category {
-	position: relative;
-	z-index: 2;
-	width: 100%;
-	height: 60px;
-	margin-top: 30px;
-  background-color: #D9D1CD;
-	border-radius: 15px 15px 0 0;
-}
-
-.description {
-	position: relative;
-	z-index: 1;
-	height: 500px;
-	margin-top: -15px;
-	background-color: $beige;
-	border-radius: 0 0 15px 15px;
-	box-shadow: 0 1px 2px rgba(25,25,25,0.2);
-}
-
-.about-descr {
-	padding: 1em;
-	color: black;
-}
-
-footer {
-	margin-top: 50px;
-	width: 100%;
-	height: 60px;
-  background-color: $grey2;
-}
-
-/////////////////////////////////////////////////////////////////
-
 .container {
 	max-width: 1024px;
 	padding: 20px 20px;
 	margin: 20px auto;
-}
-
-.project_description {
-	margin: 1em;
-	font-family: 'Lato', sans-serif;
-}
-
-.project_body {
-	overflow: hidden;
 }
 
 .portfolio {
@@ -190,28 +147,57 @@ footer {
 	grid-auto-flow: row dense;
 }
 
-.project_img {
-	width: 100%;
-	height: auto;
-}
-
 .projects {
-	//counter-increment: portfolio;
+	color: $beige;
 	margin-top: 20px;
 	cursor: pointer;
 	border-radius: 0 0 15px 15px;
-	background-color: $white;
+	background-color: $grey2;
 	box-shadow: 0 1px 2px rgba(25,25,25,0.2);
+	h2 {
+		font-size: 1em;
+	}
+	h4 {
+		font-size: 0.8em;
+		color: $grey3;
+	}
+	.project_img {
+		width: 100%;
+		height: auto;
+	}
+	.project_date {
+		margin: 0.5em;
+	}
+
+	.project_name {
+		margin: 0.5em;
+	}
+
+	.project_tag {
+		margin: 0.5em;
+	}
+
+	.project_title {
+		margin: 1em;
+		font-family: 'Lato', sans-serif;
+		color: $grey3;
+	}
 }
 
-.projects .project_body {
+
+
+.project_description {
+	overflow: hidden;
+}
+
+.projects .project_description {
 	display: none;
 }
 
-.project_body {
+.project_description {
 	margin: 1em 0em;
 	padding: 1em;
-	background-color: #FFF;
+	background-color: $grey2;
 	border-radius: 15px;
 }
 
@@ -219,7 +205,7 @@ footer {
 	.portfolio {
 		grid-template-columns: repeat(4, 1fr);
 	}
-	.project_body {
+	.project_description {
 		grid-column: span 4;
 	}
 }
