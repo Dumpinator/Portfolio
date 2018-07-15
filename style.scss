@@ -49,6 +49,20 @@ nav {
     color: $beige;
 		font-family: 'Lato', sans-serif;
   }
+	input[type=checkbox]{
+		display: none;
+		&:checked ~ ul {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	label {
+		display: none;
+	}
+}
+
+.menu-mobile {
+	display: none;
 }
 
 footer {
@@ -158,33 +172,28 @@ footer {
 		font-size: 1em;
 	}
 	h4 {
-		font-size: 0.8em;
+		font-size: 0.75em;
 		color: $grey3;
 	}
+	h5 {
+		font-size: 0.75em;
+		color: #609;
+	}
+
 	.project_img {
 		width: 100%;
 		height: auto;
 	}
-	.project_date {
-		margin: 0.5em;
-	}
-
-	.project_name {
-		margin: 0.5em;
-	}
-
-	.project_tag {
-		margin: 0.5em;
+	.project_date, .project_name, .project_tag {
+		margin: 10px 0 10px 15px;
 	}
 
 	.project_title {
-		margin: 1em;
+		margin: 15px;
 		font-family: 'Lato', sans-serif;
 		color: $grey3;
 	}
 }
-
-
 
 .project_description {
 	overflow: hidden;
@@ -199,9 +208,71 @@ footer {
 	padding: 1em;
 	background-color: $grey2;
 	border-radius: 15px;
+
+	h3 {
+		color: $beige;
+		margin: 10px 0 10px 0;
+	}
+
+	p {
+		color: $grey3;
+		margin: 20px 0 20px 0;
+	}
+	a {
+		color: $green;
+	}
 }
 
-@media screen and (min-width: 640px) {
+///Responsive ///
+
+
+
+
+
+@media screen and (max-width: 355px){
+	.menu-mobile {
+		display: flex;
+		color: $beige;
+		align-items: center;
+		justify-content: center;
+		height: 60px;
+		background-color: $grey2;
+	}
+	nav ul{
+		display: none;
+
+		a {
+			padding: 20px 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	li, li a {
+		width: 100%;
+
+	}
+}
+
+@media screen and (min-width: 364px) {
+	.portfolio {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.project_description {
+		grid-column: span 2;
+	}
+}
+
+@media screen and (min-width: 646px) {
+	.portfolio {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.project_description {
+		grid-column: span 3;
+	}
+}
+
+@media screen and (min-width: 1040px) {
 	.portfolio {
 		grid-template-columns: repeat(4, 1fr);
 	}

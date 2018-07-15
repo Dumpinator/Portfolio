@@ -26,6 +26,16 @@ nav {
     padding: 20px 30px;
     color: #E3E3E3;
     font-family: 'Lato', sans-serif; }
+  nav input[type=checkbox] {
+    display: none; }
+    nav input[type=checkbox]:checked ~ ul {
+      display: flex;
+      flex-direction: column; }
+  nav label {
+    display: none; }
+
+.menu-mobile {
+  display: none; }
 
 footer {
   margin-top: 50px;
@@ -112,19 +122,18 @@ footer {
   .projects h2 {
     font-size: 1em; }
   .projects h4 {
-    font-size: 0.8em;
+    font-size: 0.75em;
     color: #858AA0; }
+  .projects h5 {
+    font-size: 0.75em;
+    color: #609; }
   .projects .project_img {
     width: 100%;
     height: auto; }
-  .projects .project_date {
-    margin: 0.5em; }
-  .projects .project_name {
-    margin: 0.5em; }
-  .projects .project_tag {
-    margin: 0.5em; }
+  .projects .project_date, .projects .project_name, .projects .project_tag {
+    margin: 10px 0 10px 15px; }
   .projects .project_title {
-    margin: 1em;
+    margin: 15px;
     font-family: 'Lato', sans-serif;
     color: #858AA0; }
 
@@ -139,8 +148,47 @@ footer {
   padding: 1em;
   background-color: #1F253E;
   border-radius: 15px; }
+  .project_description h3 {
+    color: #E3E3E3;
+    margin: 10px 0 10px 0; }
+  .project_description p {
+    color: #858AA0;
+    margin: 20px 0 20px 0; }
+  .project_description a {
+    color: #21D78F; }
 
-@media screen and (min-width: 640px) {
+@media screen and (max-width: 355px) {
+  .menu-mobile {
+    display: flex;
+    color: #E3E3E3;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: #1F253E; }
+
+  nav ul {
+    display: none; }
+    nav ul a {
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+  li, li a {
+    width: 100%; } }
+@media screen and (min-width: 364px) {
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr); }
+
+  .project_description {
+    grid-column: span 2; } }
+@media screen and (min-width: 646px) {
+  .portfolio {
+    grid-template-columns: repeat(3, 1fr); }
+
+  .project_description {
+    grid-column: span 3; } }
+@media screen and (min-width: 1040px) {
   .portfolio {
     grid-template-columns: repeat(4, 1fr); }
 
