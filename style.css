@@ -9,15 +9,20 @@ h1, h2, h3, h4, h5, p {
   padding: 0; }
 
 nav {
+  display: flex;
   width: 100%;
   height: 60px;
   background-color: #1F253E; }
   nav ul {
     margin: 0px;
-    padding: 0px; }
+    padding: 0px;
+    flex-direction: row;
+    display: flex; }
   nav li {
     list-style-type: none;
-    float: left; }
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
     nav li:hover a {
       padding: 15px 30px 20px 30px; }
   nav a {
@@ -27,11 +32,6 @@ nav {
     color: #E3E3E3;
     font-family: 'Lato', sans-serif; }
   nav input[type=checkbox] {
-    display: none; }
-    nav input[type=checkbox]:checked ~ ul {
-      display: flex;
-      flex-direction: column; }
-  nav label {
     display: none; }
 
 .menu-mobile {
@@ -68,7 +68,6 @@ footer {
   display: none; }
 
 .message-1 {
-  position: static;
   top: 20px;
   left: 30px; }
 
@@ -157,25 +156,42 @@ footer {
   .project_description a {
     color: #21D78F; }
 
+/*
+input[type=checkbox]:checked ~ ul {
+		display: flex;
+		flex-direction: column;
+		//width: 100%;
+	}
+	*/
+input[type=checkbox]:checked ~ ul {
+  display: flex;
+  flex-direction: column; }
+
+.test {
+  display: flex;
+  flex-direction: column; }
+
 @media screen and (max-width: 355px) {
   .menu-mobile {
-    display: flex;
     color: #E3E3E3;
+    display: flex;
+    font-family: 'Lato', sans-serif;
     align-items: center;
     justify-content: center;
+    background-color: #D01B1B;
     height: 60px;
-    background-color: #1F253E; }
+    width: 100%; }
 
-  nav ul {
-    display: none; }
-    nav ul a {
-      padding: 20px 0;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-
-  li, li a {
-    width: 100%; } }
+  nav {
+    flex-direction: column; }
+    nav ul {
+      display: none; }
+      nav ul a {
+        padding: 20px 0;
+        align-items: center;
+        justify-content: center; }
+    nav li, nav li a {
+      width: 100%; } }
 @media screen and (min-width: 364px) {
   .portfolio {
     grid-template-columns: repeat(2, 1fr); }
