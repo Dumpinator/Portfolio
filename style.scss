@@ -223,16 +223,12 @@ footer {
 
 ///Responsive ///
 
-/*
-input[type=checkbox]:checked ~ ul {
-		display: flex;
-		flex-direction: column;
-		//width: 100%;
-	}
-	*/
 	input[type=checkbox]:checked ~ ul {
 			display: flex;
 			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			font-size: 0.85em;
 		}
 
 		.test {
@@ -248,26 +244,24 @@ input[type=checkbox]:checked ~ ul {
 		font-family: 'Lato', sans-serif;
 		align-items: center;
 		justify-content: center;
-		background-color: $red;
-
 		height: 60px;
-		width: 100%;
 	}
 	nav {
 		flex-direction: column;
-
+		height: inherit;
+		align-items: center;
+		justify-content: center;
 		ul{
 		display: none;
+		background-color: $grey1;
 		a {
-			padding: 20px 0;
+			padding: 20px auto;
 			align-items: center;
 			justify-content: center;
+			width: 100%;
+			}
 		}
 	}
-	li, li a {
-		width: 100%;
-	}
-}
 }
 
 @media screen and (min-width: 364px) {

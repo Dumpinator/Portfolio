@@ -156,16 +156,12 @@ footer {
   .project_description a {
     color: #21D78F; }
 
-/*
-input[type=checkbox]:checked ~ ul {
-		display: flex;
-		flex-direction: column;
-		//width: 100%;
-	}
-	*/
 input[type=checkbox]:checked ~ ul {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 0.85em; }
 
 .test {
   display: flex;
@@ -178,20 +174,21 @@ input[type=checkbox]:checked ~ ul {
     font-family: 'Lato', sans-serif;
     align-items: center;
     justify-content: center;
-    background-color: #D01B1B;
-    height: 60px;
-    width: 100%; }
+    height: 60px; }
 
   nav {
-    flex-direction: column; }
+    flex-direction: column;
+    height: inherit;
+    align-items: center;
+    justify-content: center; }
     nav ul {
-      display: none; }
+      display: none;
+      background-color: #2C324F; }
       nav ul a {
-        padding: 20px 0;
+        padding: 20px auto;
         align-items: center;
-        justify-content: center; }
-    nav li, nav li a {
-      width: 100%; } }
+        justify-content: center;
+        width: 100%; } }
 @media screen and (min-width: 364px) {
   .portfolio {
     grid-template-columns: repeat(2, 1fr); }
