@@ -24,7 +24,8 @@ nav {
     align-items: center;
     justify-content: center; }
     nav li:hover a {
-      padding: 15px 30px 20px 30px; }
+      padding: 20px 30px 19px 30px;
+      border-bottom: 2px solid #E3E3E3; }
   nav a {
     display: inline-block;
     text-decoration: none;
@@ -43,20 +44,25 @@ footer {
   height: 60px;
   background-color: #1F253E; }
 
+.section {
+  background-color: #858AA0; }
+
 .message {
   display: flex;
-  align-items: center;
-  background-color: #858AA0; }
+  align-items: center; }
 
 .message .avatar {
   width: 60px;
   border-radius: 50%;
   border: 2px solid #E3E3E3;
-  margin: 20px 20px; }
+  margin: 20px 20px;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite; }
 
 .message .text {
+  font-family: 'Roboto', sans-serif;
   background: #E3E3E3;
-  color: black;
+  color: #1F253E;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px 8px 8px 0;
   padding: 10px 20px;
@@ -67,10 +73,22 @@ footer {
 .secret {
   display: none; }
 
+/*
 .message-1 {
-  top: 20px;
-  left: 30px; }
-
+	top: 20px;
+	left: 30px;
+}
+*/
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(0px); }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.1);
+    transform: translatey(-5px); }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(0px); } }
 .bubble-spinner > div {
   width: 10px;
   height: 10px;
@@ -125,7 +143,7 @@ footer {
     color: #858AA0; }
   .projects h5 {
     font-size: 0.75em;
-    color: #609; }
+    color: #563d7c; }
   .projects .project_img {
     width: 100%;
     height: auto; }
@@ -162,10 +180,9 @@ input[type=checkbox]:checked ~ ul {
   align-items: center;
   width: 100%;
   font-size: 0.85em; }
-
-.test {
-  display: flex;
-  flex-direction: column; }
+  input[type=checkbox]:checked ~ ul li:hover a {
+    padding: 15px 30px 13px 30px;
+    border-bottom: 2px solid #E3E3E3; }
 
 @media screen and (max-width: 355px) {
   .menu-mobile {
@@ -185,10 +202,9 @@ input[type=checkbox]:checked ~ ul {
       display: none;
       background-color: #2C324F; }
       nav ul a {
-        padding: 20px auto;
-        align-items: center;
-        justify-content: center;
-        width: 100%; } }
+        display: flex;
+        padding: 15px 60px;
+        background-color: #2C324F; } }
 @media screen and (min-width: 364px) {
   .portfolio {
     grid-template-columns: repeat(2, 1fr); }

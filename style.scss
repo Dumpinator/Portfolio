@@ -9,6 +9,10 @@ $purple : #A626FB;
 $green : #21D78F;
 $grey3 : #858AA0;
 $red : #D01B1B;
+// Softs colors
+$bootstrap: #563d7c;
+
+
 
 /// General ///
 
@@ -39,13 +43,13 @@ nav {
   }
   li {
     list-style-type: none;
-		//display: inline-block;
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
-    &:hover a {
-      padding: 15px 30px 20px 30px;
-    }
+		&:hover a {
+			padding: 20px 30px 19px 30px;
+			border-bottom: 2px solid $beige;
+		}
   }
   a {
     display: inline-block;
@@ -72,10 +76,13 @@ footer {
 
 //////// category ///////
 
+.section {
+	background-color: $grey3;
+}
+
 .message {
 	display: flex;
-  align-items: center;
-	background-color: $grey3;
+	align-items: center;
 }
 
 .message .avatar {
@@ -83,11 +90,13 @@ footer {
 	border-radius: 50%;
 	border: 2px solid $beige;
 	margin: 20px 20px;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
 }
-
 .message .text {
+	font-family: 'Roboto', sans-serif;
 	background: $beige;
-	color: black;
+	color: $grey2;
 	box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 8px 8px 8px 0;
 	padding: 10px 20px;
@@ -99,20 +108,35 @@ footer {
 .secret {
 	display: none;
 }
-
+/*
 .message-1 {
-		//position: static;
-		top: 20px;
-		left: 30px;
+	top: 20px;
+	left: 30px;
+}
+*/
+/// animation levitation ///
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.1);
+		transform: translatey(-5px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(0px);
+	}
 }
 
-/// animation points discution ///
+/// animation chargement tchat ///
 
 .bubble-spinner > div {
   width: 10px;
   height: 10px;
   background-color: white;
-
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
@@ -175,7 +199,7 @@ footer {
 	}
 	h5 {
 		font-size: 0.75em;
-		color: #609;
+		color: $bootstrap;
 	}
 
 	.project_img {
@@ -185,7 +209,6 @@ footer {
 	.project_date, .project_name, .project_tag {
 		margin: 10px 0 10px 15px;
 	}
-
 	.project_title {
 		margin: 15px;
 		font-family: 'Lato', sans-serif;
@@ -196,7 +219,6 @@ footer {
 .project_description {
 	overflow: hidden;
 }
-
 .projects .project_description {
 	display: none;
 }
@@ -206,12 +228,10 @@ footer {
 	padding: 1em;
 	background-color: $grey2;
 	border-radius: 15px;
-
 	h3 {
 		color: $beige;
 		margin: 10px 0 10px 0;
 	}
-
 	p {
 		color: $grey3;
 		margin: 20px 0 20px 0;
@@ -229,13 +249,13 @@ footer {
 			align-items: center;
 			width: 100%;
 			font-size: 0.85em;
+			li {
+				&:hover a {
+		      padding: 15px 30px 13px 30px;
+					border-bottom: 2px solid $beige;
+		    }
+			}
 		}
-
-		.test {
-			display: flex;
-			flex-direction: column;
-		}
-
 
 @media screen and (max-width: 355px){
 	.menu-mobile {
@@ -255,10 +275,9 @@ footer {
 		display: none;
 		background-color: $grey1;
 		a {
-			padding: 20px auto;
-			align-items: center;
-			justify-content: center;
-			width: 100%;
+			display: flex;
+			padding: 15px 60px;
+			background-color: $grey1;
 			}
 		}
 	}

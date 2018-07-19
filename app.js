@@ -77,17 +77,27 @@ class Portfolio {
 //////// FRONT ////////
 
 window.sr = ScrollReveal({ reset: false });
-sr.reveal('.foo', { origin: 'left',
+sr.reveal('.js-message-1', { origin: 'left',
 										duration: 2000 });
 
-let monSecret1 = document.querySelector('.secret')
-let monTest = document.querySelector('.text')
+sr.reveal('.js-message-2', { origin: 'left',
+										duration: 2000 });
 
 window.setTimeout(removeSecret, 2000)
 
+
 function removeSecret() {
-  monSecret1.classList.remove('secret')
-  monTest.classList.add('secret')
-  }
+	let monSecret = document.querySelectorAll("p.secret")
+	for (let item of monSecret) {
+		item.classList.remove('secret')
+	}
+	let monText = document.querySelectorAll("div.text")
+	for (let item of monText) {
+		item.classList.add('secret')
+	}
+}
+
+
+
 
 new Portfolio ('#js-portfolio')
