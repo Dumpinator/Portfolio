@@ -68,17 +68,19 @@ footer {
   padding: 10px 20px;
   text-align: left;
   max-width: 300px;
-  margin: 0; }
+  margin-right: 10px; }
 
-.secret {
-  display: none; }
+.js-message-1 {
+  position: relative;
+  z-index: 1; }
 
-/*
-.message-1 {
-	top: 20px;
-	left: 30px;
-}
-*/
+.js-message-2 {
+  position: absolute;
+  z-index: 2; }
+
+.content-message {
+  display: flex; }
+
 @keyframes float {
   0% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);

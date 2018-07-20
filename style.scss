@@ -102,18 +102,20 @@ footer {
 	padding: 10px 20px;
 	text-align: left;
 	max-width: 300px;
-	margin: 0;
+	margin-right: 10px;
+}
+.js-message-1 {
+	position: relative;
+	z-index: 1;
+}
+.js-message-2 {
+	position: absolute;
+	z-index: 2;
+}
+.content-message {
+	display: flex;
 }
 
-.secret {
-	display: none;
-}
-/*
-.message-1 {
-	top: 20px;
-	left: 30px;
-}
-*/
 /// animation levitation ///
 
 @keyframes float {

@@ -76,26 +76,14 @@ class Portfolio {
 
 //////// FRONT ////////
 
-window.sr = ScrollReveal({ reset: false });
+window.sr = ScrollReveal({ reset: true });
 sr.reveal('.js-message-1', { origin: 'left',
-										duration: 2000 });
-
+										duration: 1900 });
 sr.reveal('.js-message-2', { origin: 'left',
-										duration: 2000 });
+										duration: 50,
+										delay: 2000 });
 
-window.setTimeout(removeSecret, 2000)
 
-
-function removeSecret() {
-	let monSecret = document.querySelectorAll("p.secret")
-	for (let item of monSecret) {
-		item.classList.remove('secret')
-	}
-	let monText = document.querySelectorAll("div.text")
-	for (let item of monText) {
-		item.classList.add('secret')
-	}
-}
 
 
 
