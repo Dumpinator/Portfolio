@@ -9,6 +9,11 @@ $purple : #A626FB;
 $green : #21D78F;
 $grey3 : #858AA0;
 $red : #D01B1B;
+$dark : #0A1028;
+// language colors
+$html : #ff8c4e;
+$css : #3899d4;
+$js : #ffde56;
 // Softs colors
 $bootstrap: #563d7c;
 
@@ -199,17 +204,67 @@ footer {
 		font-size: 0.75em;
 		color: $grey3;
 	}
-	h5 {
-		font-size: 0.75em;
-		color: $bootstrap;
-	}
-
 	.project_img {
 		width: 100%;
 		height: auto;
 	}
 	.project_date, .project_name, .project_tag {
-		margin: 10px 0 10px 15px;
+		margin: 10px 10px 10px 10px;
+
+	}
+	.project_tag {
+		ul {
+			margin: 0;
+  		overflow: hidden;
+			list-style: none;
+	  	padding: 0;
+		}
+		li {
+  	float: left;
+		margin: 2px 2px;
+		}
+		a {
+			z-index: 10;
+		}
+		.tag {
+			padding: 4px 4px 3px 4px;
+			font-size: 0.70em;
+			font-family: 'Roboto', sans-serif;
+			color: $grey3;
+  		background-color: $dark;
+  		border-radius: 5px;
+  		text-decoration: none;
+  		-webkit-transition: color 0.2s;
+			&:hover {
+  			color: $beige;
+				text-shadow: 0 1px 2px rgba(25,25,25,0.5);
+				&.tag-html {
+					background-color: $html;
+				}
+				&.tag-css {
+					background-color: $css;
+				}
+				&.tag-js {
+					background-color: $js;
+				}
+				&.tag-bootstrap {
+					background-color: $bootstrap;
+				}
+			}
+		}
+		// add here color softs or langages
+		.tag-html {
+			color: $html;
+		}
+		.tag-css {
+			color: $css;
+		}
+		.tag-js {
+			color: $js;
+		}
+		.tag-bootstrap {
+			color: $bootstrap;
+		}
 	}
 	.project_title {
 		margin: 15px;
@@ -217,9 +272,55 @@ footer {
 		color: $grey3;
 	}
 }
-
 .project_description {
 	overflow: hidden;
+
+	.project_tag {
+		ul {
+			margin: 0;
+  		overflow: hidden;
+			list-style: none;
+	  	padding: 0;
+		}
+		li {
+  	float: left;
+		margin: 2px 2px;
+		}
+	}
+
+	.tag {
+		padding: 4px 4px 3px 4px;
+		font-size: 0.70em;
+		font-family: 'Roboto', sans-serif;
+		color: $grey3;
+		background-color: $dark;
+		border-radius: 5px;
+		text-decoration: none;
+		-webkit-transition: color 0.2s;
+		&:hover {
+			color: $beige;
+			text-shadow: 0 1px 2px rgba(25,25,25,0.5);
+			&.tag-html {
+				background-color: $html;
+			}
+			&.tag-css {
+				background-color: $css;
+			}
+			&.tag-js {
+				background-color: $js;
+			}
+		}
+	}
+
+	.tag-html {
+		color: $html;
+	}
+	.tag-css {
+		color: $css;
+	}
+	.tag-js {
+		color: $js;
+	}
 }
 .projects .project_description {
 	display: none;
@@ -240,6 +341,12 @@ footer {
 	}
 	a {
 		color: $green;
+
+		text-decoration: none;
+	}
+	.link {
+		text-align: center;
+		margin-top: 10px;
 	}
 }
 
@@ -283,6 +390,10 @@ footer {
 			}
 		}
 	}
+}
+
+.js-item {
+	z-index: 0;
 }
 
 @media screen and (min-width: 364px) {
