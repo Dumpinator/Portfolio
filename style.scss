@@ -237,7 +237,6 @@ footer {
   		-webkit-transition: color 0.2s;
 			&:hover {
   			color: $beige;
-				text-shadow: 0 1px 2px rgba(25,25,25,0.5);
 				&.tag-html {
 					background-color: $html;
 				}
@@ -267,7 +266,7 @@ footer {
 		}
 	}
 	.project_title {
-		margin: 15px;
+		margin: 15px 10px;
 		font-family: 'Lato', sans-serif;
 		color: $grey3;
 	}

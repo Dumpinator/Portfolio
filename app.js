@@ -13,7 +13,6 @@ class Portfolio {
 
 		this.children.forEach((child) => {
 			child.addEventListener('click', (e) => {
-				e.preventDefault()
 				this.show(child)
 			})
 		})

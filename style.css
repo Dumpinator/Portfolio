@@ -168,8 +168,7 @@ footer {
     text-decoration: none;
     -webkit-transition: color 0.2s; }
     .projects .project_tag .tag:hover {
-      color: #E3E3E3;
-      text-shadow: 0 1px 2px rgba(25, 25, 25, 0.5); }
+      color: #E3E3E3; }
       .projects .project_tag .tag:hover.tag-html {
         background-color: #ff8c4e; }
       .projects .project_tag .tag:hover.tag-css {
@@ -187,7 +186,7 @@ footer {
   .projects .project_tag .tag-bootstrap {
     color: #563d7c; }
   .projects .project_title {
-    margin: 15px;
+    margin: 15px 10px;
     font-family: 'Lato', sans-serif;
     color: #858AA0; }
 
