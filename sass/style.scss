@@ -1,3 +1,13 @@
+@import "compass/css3";
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
 // Main colors
 $beige : #E3E3E3;
 $grey1 : #2C324F;
@@ -20,6 +30,15 @@ $bootstrap: #563d7c;
 
 
 /// General ///
+.tag-html {
+	color: $html;
+}
+.tag-css {
+	color: $css;
+}
+.tag-js {
+	color: $js;
+}
 
 body {
 	background-color: $grey1;
@@ -72,8 +91,78 @@ nav {
 	display: none;
 }
 
+.content-name {
+	color : $beige;
+
+	h1 {
+		float: left;
+		margin: 20px 20px;
+	}
+}
+
+.testto {
+	background-position: center;
+  background-size: cover;
+	height: 600px;
+	background-image: url('../img/p3.jpg');
+}
+
+.skill {
+	background-color: $grey2;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	.skill-lang, .skill-lib {
+		background-color: $grey3;
+		width: auto;
+	}
+	.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+	display: flex;
+	flex-direction: column;
+	}
+
+.flex-item {
+  padding: 5px;
+  font-size: 1em;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	p {
+		padding-right: 15px;
+		.tag-html {
+			color: $html;
+			}
+		.tag-css {
+				color: $css;
+				}
+		.tag-js {
+					color: $js;
+					}
+		}
+	}
+}
+
+progress {
+    color: #3fb6b2;
+    background: #efefef;
+}
+progress::-webkit-progress-bar {
+    background: #efefef;
+}
+progress::-webkit-progress-value {
+    background: #3fb6b2;
+}
+progress::-moz-progress-bar {
+    color: #3fb6b2;
+    background: #efefef;
+	}
+
 footer {
-	margin-top: 50px;
 	width: 100%;
 	height: 60px;
   background-color: $grey2;
@@ -314,6 +403,7 @@ footer {
 	.tag-html {
 		color: $html;
 	}
+
 	.tag-css {
 		color: $css;
 	}
@@ -339,8 +429,6 @@ footer {
 		margin: 20px 0 20px 0;
 	}
 	a {
-		color: $green;
-
 		text-decoration: none;
 	}
 	.link {
@@ -364,6 +452,9 @@ footer {
 		    }
 			}
 		}
+
+
+
 
 @media screen and (max-width: 355px){
 	.menu-mobile {
