@@ -24,6 +24,7 @@ $dark : #0A1028;
 $html : #ff8c4e;
 $css : #3899d4;
 $js : #ffde56;
+$php : #505c91;
 // Softs colors
 $bootstrap: #563d7c;
 
@@ -38,6 +39,9 @@ $bootstrap: #563d7c;
 }
 .tag-js {
 	color: $js;
+}
+.tag-php {
+	color: $php;
 }
 
 body {
@@ -113,10 +117,12 @@ nav {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	border-radius: 0 0 15px 15px;
+
 	.skill-lang, .skill-lib {
-		background-color: $grey3;
-		width: auto;
+		margin: 10px;
 	}
+
 	.flex-container {
   padding: 0;
   margin: 0;
@@ -125,41 +131,52 @@ nav {
 	flex-direction: column;
 	}
 
-.flex-item {
+	.flex-item {
   padding: 5px;
   font-size: 1em;
 
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+
+
+
 	p {
 		padding-right: 15px;
 		.tag-html {
 			color: $html;
 			}
 		.tag-css {
-				color: $css;
-				}
+			color: $css;
+			}
 		.tag-js {
-					color: $js;
-					}
+			color: $js;
+			}
+		.tag-php {
+			color: $php;
+			}
 		}
 	}
 }
 
 progress {
-    color: #3fb6b2;
-    background: #efefef;
+    color: $dark;
+    background: $grey3;
+		border-radius: 20px;
 }
 progress::-webkit-progress-bar {
-    background: #efefef;
+    background: $dark;
+		border-radius: 20px;
 }
 progress::-webkit-progress-value {
-    background: #3fb6b2;
+    background: $grey3;
+		border-radius: 20px;
 }
 progress::-moz-progress-bar {
-    color: #3fb6b2;
-    background: #efefef;
+    color: $grey3;
+    background: $dark;
+		border-radius: 20px;
 	}
 
 footer {
@@ -399,11 +416,9 @@ footer {
 			}
 		}
 	}
-
 	.tag-html {
 		color: $html;
 	}
-
 	.tag-css {
 		color: $css;
 	}
