@@ -139,9 +139,6 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 
-
-
-
 	p {
 		padding-right: 15px;
 		.tag-html {
@@ -163,20 +160,24 @@ nav {
 progress {
     color: $dark;
     background: $grey3;
-		border-radius: 20px;
+		border-radius: 15px;
+		display: flex;
+
 }
 progress::-webkit-progress-bar {
     background: $dark;
-		border-radius: 20px;
+		border-radius: 15px;
 }
 progress::-webkit-progress-value {
     background: $grey3;
-		border-radius: 20px;
+		//height: 10px;
+		border-radius: 15px;
+		padding: 2px;
 }
 progress::-moz-progress-bar {
     color: $grey3;
     background: $dark;
-		border-radius: 20px;
+		border-radius: 15px;
 	}
 
 footer {
@@ -397,7 +398,7 @@ footer {
 		padding: 4px 4px 3px 4px;
 		font-size: 0.70em;
 		font-family: 'Roboto', sans-serif;
-		color: $grey3;
+		//color: $grey3;
 		background-color: $dark;
 		border-radius: 5px;
 		text-decoration: none;
