@@ -1,12 +1,3 @@
-@import "compass/css3";
-
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
 
 // Main colors
 $beige : #E3E3E3;
@@ -27,10 +18,11 @@ $js : #ffde56;
 $php : #505c91;
 // Softs colors
 $bootstrap: #563d7c;
-
-
+$sass: #cb689a;
 
 /// General ///
+
+/// color for language skill
 .tag-html {
 	color: $html;
 }
@@ -42,6 +34,12 @@ $bootstrap: #563d7c;
 }
 .tag-php {
 	color: $php;
+}
+.tag-bootstrap {
+  color: $bootstrap;
+}
+.tag-sass {
+  color: $sass;
 }
 
 body {
@@ -56,7 +54,7 @@ h1, h2, h3, h4, h5, p {
 	padding: 0;
 }
 
-/// Nav bar ///
+//////// NAV BAR ///////
 
 nav {
 	display: flex;
@@ -95,90 +93,7 @@ nav {
 	display: none;
 }
 
-.content-name {
-	color : $beige;
-
-	h1 {
-		float: left;
-		margin: 20px 20px;
-	}
-}
-
-.testto {
-	background-position: center;
-  background-size: cover;
-	height: 600px;
-	background-image: url('../img/p3.jpg');
-}
-
-.skill {
-	background-color: $grey2;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	border-radius: 0 0 15px 15px;
-
-	.skill-lang, .skill-lib {
-		margin: 10px;
-	}
-
-	.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-	display: flex;
-	flex-direction: column;
-	}
-
-	.flex-item {
-  padding: 5px;
-  font-size: 1em;
-
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-
-	p {
-		padding-right: 15px;
-		.tag-html {
-			color: $html;
-			}
-		.tag-css {
-			color: $css;
-			}
-		.tag-js {
-			color: $js;
-			}
-		.tag-php {
-			color: $php;
-			}
-		}
-	}
-}
-
-progress {
-    color: $dark;
-    background: $grey3;
-		border-radius: 15px;
-		display: flex;
-
-}
-progress::-webkit-progress-bar {
-    background: $dark;
-		border-radius: 15px;
-}
-progress::-webkit-progress-value {
-    background: $grey3;
-		//height: 10px;
-		border-radius: 15px;
-		padding: 2px;
-}
-progress::-moz-progress-bar {
-    color: $grey3;
-    background: $dark;
-		border-radius: 15px;
-	}
+//////// FOOTER ///////
 
 footer {
 	width: 100%;
@@ -186,7 +101,7 @@ footer {
   background-color: $grey2;
 }
 
-//////// category ///////
+//////// CATEGORY ///////
 
 .section {
 	background-color: $grey3;
@@ -205,6 +120,7 @@ footer {
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
 }
+
 .message .text {
 	font-family: 'Roboto', sans-serif;
 	background: $beige;
@@ -216,19 +132,22 @@ footer {
 	max-width: 300px;
 	margin-right: 10px;
 }
+
 .js-message-1 {
 	position: relative;
 	z-index: 1;
 }
+
 .js-message-2 {
 	position: absolute;
 	z-index: 2;
 }
+
 .content-message {
 	display: flex;
 }
 
-/// animation levitation ///
+/// animation levitation
 
 @keyframes float {
 	0% {
@@ -245,7 +164,7 @@ footer {
 	}
 }
 
-/// animation chargement tchat ///
+/// animation chargement tchat
 
 .bubble-spinner > div {
   width: 10px;
@@ -282,7 +201,7 @@ footer {
   }
 }
 
-/// design grille Portofolio ///
+//////// PORTOFOLIO SECTION ///////
 
 .container {
 	max-width: 1024px;
@@ -337,7 +256,6 @@ footer {
 			padding: 4px 4px 3px 4px;
 			font-size: 0.70em;
 			font-family: 'Roboto', sans-serif;
-			color: $grey3;
   		background-color: $dark;
   		border-radius: 5px;
   		text-decoration: none;
@@ -356,6 +274,10 @@ footer {
 				&.tag-bootstrap {
 					background-color: $bootstrap;
 				}
+        &.tag-sass {
+          background-color: $sass;
+        }
+
 			}
 		}
 		// add here color softs or langages
@@ -371,13 +293,18 @@ footer {
 		.tag-bootstrap {
 			color: $bootstrap;
 		}
+    .tag-sass {
+      color: $sass;
+    }
 	}
+
 	.project_title {
 		margin: 15px 10px;
 		font-family: 'Lato', sans-serif;
 		color: $grey3;
 	}
 }
+
 .project_description {
 	overflow: hidden;
 
@@ -387,7 +314,7 @@ footer {
   		overflow: hidden;
 			list-style: none;
 	  	padding: 0;
-		}
+		 }
 		li {
   	float: left;
 		margin: 2px 2px;
@@ -398,7 +325,6 @@ footer {
 		padding: 4px 4px 3px 4px;
 		font-size: 0.70em;
 		font-family: 'Roboto', sans-serif;
-		//color: $grey3;
 		background-color: $dark;
 		border-radius: 5px;
 		text-decoration: none;
@@ -427,6 +353,7 @@ footer {
 		color: $js;
 	}
 }
+
 .projects .project_description {
 	display: none;
 }
@@ -453,6 +380,198 @@ footer {
 	}
 }
 
+.js-item {
+	z-index: 0;
+}
+
+//////// ABOUT SECTION ///////
+
+.about_image {
+	background-position: center;
+  background-size: cover;
+	height: 600px;
+	background-image: url('../img/p3.jpg');
+}
+
+.content-name {
+	color : $beige;
+	h1 {
+		float: left;
+		margin: 20px 20px;
+	}
+}
+
+.about_tag {
+  padding: 4px 4px 3px 4px;
+  font-family: 'Roboto', sans-serif;
+  background-color: $dark;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-transition: color 0.2s;
+  &:hover {
+    color: $beige;
+    &.tag-html {
+      background-color: $html;
+    }
+    &.tag-css {
+      background-color: $css;
+    }
+    &.tag-js {
+      background-color: $js;
+    }
+    &.tag-bootstrap {
+      background-color: $bootstrap;
+    }
+    &.tag-sass {
+      background-color: $sass;
+    }
+  }
+  a {
+    text-decoration: none;
+    .tag-html {
+    	color: $html;
+    }
+    .tag-css {
+    	color: $css;
+    }
+    .tag-js {
+    	color: $js;
+    }
+    .tag-php {
+    	color: $php;
+    }
+    .tag-bootstrap {
+      color: $bootstrap;
+    }
+  }
+}
+
+.skill {
+	background-color: $grey2;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-radius: 0 0 15px 15px;
+    .skill-lang, .skill-lib {
+		    margin: 10px;
+	     }
+	  .flex-container {
+      padding: 0;
+      margin: 0;
+    	display: flex;
+    	flex-direction: column;
+	   }
+	  .flex-item {
+      padding: 5px;
+    	display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+      p  {
+		      padding-right: 15px;
+		      }
+	    }
+    }
+
+.prog-html {
+    progress {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 3px;
+    background: $dark;
+		border-radius: 15px;
+    border-style: none;
+		box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.1);
+  }
+    progress::-webkit-progress-bar {
+        background: $dark;
+    		border-radius: 15px;
+  }
+    progress::-webkit-progress-value {
+		border-radius: 15px;
+		padding: 2px;
+    background: $html;
+  }
+    progress::-moz-progress-bar {
+    background: $html;
+		border-radius: 15px;
+	}
+}
+.prog-css {
+    progress {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 3px;
+    background: $dark;
+		border-radius: 15px;
+    border-style: none;
+		box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.1);
+  }
+    progress::-webkit-progress-bar {
+        background: $dark;
+    		border-radius: 15px;
+  }
+    progress::-webkit-progress-value {
+		border-radius: 15px;
+		padding: 2px;
+    background: $css;
+  }
+    progress::-moz-progress-bar {
+    background: $css;
+		border-radius: 15px;
+	}
+}
+
+.prog-js {
+    progress {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 3px;
+    background: $dark;
+		border-radius: 15px;
+    border-style: none;
+		box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.1);
+  }
+    progress::-webkit-progress-bar {
+        background: $dark;
+    		border-radius: 15px;
+  }
+    progress::-webkit-progress-value {
+		border-radius: 15px;
+		padding: 2px;
+    background: $js;
+  }
+    progress::-moz-progress-bar {
+    background: $js;
+		border-radius: 15px;
+	}
+}
+
+.prog-php {
+    progress {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 3px;
+    background: $dark;
+		border-radius: 15px;
+    border-style: none;
+		box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.1);
+  }
+    progress::-webkit-progress-bar {
+        background: $dark;
+    		border-radius: 15px;
+  }
+    progress::-webkit-progress-value {
+		border-radius: 15px;
+		padding: 2px;
+    background: $php;
+  }
+    progress::-moz-progress-bar {
+    background: $php;
+		border-radius: 15px;
+	}
+}
+
 ///Responsive ///
 
 	input[type=checkbox]:checked ~ ul {
@@ -468,9 +587,6 @@ footer {
 		    }
 			}
 		}
-
-
-
 
 @media screen and (max-width: 355px){
 	.menu-mobile {
@@ -496,10 +612,6 @@ footer {
 			}
 		}
 	}
-}
-
-.js-item {
-	z-index: 0;
 }
 
 @media screen and (min-width: 364px) {
