@@ -19,7 +19,8 @@ $php : #505c91;
 // Softs colors
 $bootstrap: #563d7c;
 $sass: #cb689a;
-
+$compass: #fc272b;
+$gulp: #d04546;
 /// General ///
 
 /// color for language skill
@@ -40,6 +41,12 @@ $sass: #cb689a;
 }
 .tag-sass {
   color: $sass;
+}
+.tag-compass {
+  color: $compass;
+}
+.tag-gulp {
+  color: $gulp;
 }
 
 body {
@@ -402,14 +409,19 @@ footer {
 }
 
 .about_tag {
-  padding: 4px 4px 3px 4px;
+  padding: 3px 10px;
   font-family: 'Roboto', sans-serif;
   background-color: $dark;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 15px;
   -webkit-transition: color 0.2s;
+  a {
+    text-decoration: none;
+  }
   &:hover {
-    color: $beige;
+    a, .fab, .fas, .far {
+      color: $beige;
+    }
     &.tag-html {
       background-color: $html;
     }
@@ -425,25 +437,17 @@ footer {
     &.tag-sass {
       background-color: $sass;
     }
-  }
-  a {
-    text-decoration: none;
-    .tag-html {
-    	color: $html;
+    &.tag-compass {
+      background-color: $compass;
     }
-    .tag-css {
-    	color: $css;
-    }
-    .tag-js {
-    	color: $js;
-    }
-    .tag-php {
-    	color: $php;
-    }
-    .tag-bootstrap {
-      color: $bootstrap;
+    &.tag-gulp {
+      background-color: $gulp;
     }
   }
+}
+
+.fab, .fas, .far {
+  margin-right: 5px;
 }
 
 .skill {
@@ -460,18 +464,28 @@ footer {
       padding: 0;
       margin: 0;
     	display: flex;
+      flex-wrap: wrap;
     	flex-direction: column;
 	   }
 	  .flex-item {
       padding: 5px;
     	display: flex;
+      flex-wrap: wrap;
     	align-items: center;
     	justify-content: space-between;
       p  {
 		      padding-right: 15px;
-		      }
-	    }
-    }
+		  }
+	   }
+     .flex-container-2 {
+       padding: 0;
+       margin: 0;
+     	display: flex;
+      flex-wrap: wrap;
+     	flex-direction: row;
+      justify-content: flex-start;
+ 	   }
+}
 
 .prog-html {
     progress {
@@ -521,7 +535,6 @@ footer {
 		border-radius: 15px;
 	}
 }
-
 .prog-js {
     progress {
     -moz-appearance: none;
@@ -546,7 +559,6 @@ footer {
 		border-radius: 15px;
 	}
 }
-
 .prog-php {
     progress {
     -moz-appearance: none;
