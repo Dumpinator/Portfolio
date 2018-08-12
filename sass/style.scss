@@ -11,6 +11,8 @@ $green : #21D78F;
 $grey3 : #858AA0;
 $red : #D01B1B;
 $dark : #0A1028;
+$oclock : #22c2a7;
+$oclock1 : #fffcda;
 // language colors
 $html : #ff8c4e;
 $css : #3899d4;
@@ -21,6 +23,7 @@ $bootstrap: #563d7c;
 $sass: #cb689a;
 $compass: #fc272b;
 $gulp: #d04546;
+$vanilla: #e6d9a7;
 /// General ///
 
 /// color for language skill
@@ -47,6 +50,12 @@ $gulp: #d04546;
 }
 .tag-gulp {
   color: $gulp;
+}
+.tag-vanilla {
+  color: $vanilla;
+}
+.tag-oclock {
+  color: $oclock;
 }
 
 body {
@@ -401,11 +410,28 @@ footer {
 }
 
 .content-name {
+  display: flex;
+  flex-direction: column;
 	color : $beige;
-	h1 {
-		float: left;
-		margin: 20px 20px;
+	h1, p {
+		//float: left;
+		margin: 10px 20px;
 	}
+}
+
+.oclock {
+    margin-left: 5px;
+    padding: 3px 10px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 15px;
+    -webkit-transition: color 0.2s;
+    text-decoration: none;
+    background-color: $oclock;
+    color: $oclock1;
+    &:hover {
+      background-color: $oclock1;
+      color: $oclock;
+    }
 }
 
 .about_tag {
@@ -419,7 +445,7 @@ footer {
     text-decoration: none;
   }
   &:hover {
-    a, .fab, .fas, .far {
+    a, .fab, .fas, .far, .fa {
       color: $beige;
     }
     &.tag-html {
@@ -443,10 +469,13 @@ footer {
     &.tag-gulp {
       background-color: $gulp;
     }
+    &.tag-vanilla {
+      background-color: $vanilla;
+    }
   }
 }
 
-.fab, .fas, .far {
+.fab, .fas, .far, .fa {
   margin-right: 5px;
 }
 
@@ -459,6 +488,7 @@ footer {
 	border-radius: 0 0 15px 15px;
     .skill-lang, .skill-lib {
 		    margin: 10px;
+        max-width: 260px;
 	     }
 	  .flex-container {
       padding: 0;

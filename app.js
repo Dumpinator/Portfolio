@@ -75,7 +75,7 @@ class Portfolio {
 
 //////// FRONT ////////
 
-window.sr = ScrollReveal({ reset: false });
+window.sr = ScrollReveal({ reset: true });
 sr.reveal('.js-message-1', { origin: 'left',
 										duration: 1900 });
 sr.reveal('.js-message-2', { origin: 'left',
