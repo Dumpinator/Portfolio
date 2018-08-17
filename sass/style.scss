@@ -13,6 +13,9 @@ $red : #D01B1B;
 $dark : #0A1028;
 $oclock : #22c2a7;
 $oclock1 : #fffcda;
+$sololearn : #1abc9c;
+$linkedin : #0476b3;
+$codecademy : #F65A5B;
 // language colors
 $html : #ff8c4e;
 $css : #3899d4;
@@ -73,9 +76,9 @@ h1, h2, h3, h4, h5, p {
 //////// NAV BAR ///////
 
 nav {
-	display: flex;
+	//display: flex;
   width: 100%;
-	height: 60px;
+	//height: 60px;
   background-color: $grey2;
   ul {
     margin: 0px;
@@ -112,7 +115,6 @@ nav {
 //////// FOOTER ///////
 
 footer {
-	width: 100%;
 	height: 60px;
   background-color: $grey2;
 }
@@ -150,12 +152,12 @@ footer {
 
 .js-message-1 {
 	position: relative;
-	z-index: 1;
+	//z-index: 1;
 }
 
 .js-message-2 {
 	position: absolute;
-	z-index: 2;
+	//z-index: 2;
 }
 
 .content-message {
@@ -405,7 +407,7 @@ footer {
 	background-position: center;
   background-size: cover;
 	height: 600px;
-	background-image: url('../img/p3.jpg');
+	background-image: url('../img/test.jpg');
 }
 
 .content-name {
@@ -420,6 +422,16 @@ footer {
     line-height: 1.5em;
   }
 }
+
+.p-oclock {
+    background-color: $grey3;
+    padding: 10px;
+    p {
+			line-height: 1.75;
+      text-align: center;
+      color: $oclock1;
+    }
+  }
 
 .oclock {
     margin-left: 2px;
@@ -444,6 +456,9 @@ footer {
   text-decoration: none;
   border-radius: 15px;
   -webkit-transition: color 0.2s;
+	.fab, .fas, .far, .fa {
+	  margin-right: 5px;
+	}
   a {
     text-decoration: none;
   }
@@ -477,11 +492,11 @@ footer {
     }
   }
 }
-
+/*
 .fab, .fas, .far, .fa {
   margin-right: 5px;
 }
-
+*/
 .skill {
 	background-color: $grey2;
 	display: flex;
@@ -489,8 +504,10 @@ footer {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	border-radius: 0 0 15px 15px;
-    .skill-lang, .skill-lib {
-		    margin: 10px;
+    .skill-lang, .skill-lib, .skill-learn {
+				display: flex;
+				align-items: center;
+		    margin: 20px;
         max-width: 260px;
 	     }
 	  .flex-container {
@@ -516,8 +533,39 @@ footer {
      	display: flex;
       flex-wrap: wrap;
      	flex-direction: row;
-      justify-content: flex-start;
+      justify-content: center;
  	   }
+		 .skill-learn {
+
+			.learn-icon {
+				display: flex;
+		    flex-direction: column;
+		    width: 90px;
+		    align-items: center;
+			}
+			ul {
+		 		margin: 0;
+		 		padding: 0;
+		 		display: flex;
+		 		flex-direction: column;
+		 		list-style-type: none;
+		 	}
+		 	li {
+		 		margin: 10px;
+		 	}
+		 	a	{
+		 		color: inherit;
+		 		text-decoration: none;
+		 		//margin-top: 10px;
+		 	}
+			.sololearn-icon {
+				color: $sololearn;
+			}
+			.codecademy-icon {
+				color: $codecademy;
+			}
+	 	}
+
 }
 
 .prog-html {
@@ -617,6 +665,44 @@ footer {
 	}
 }
 
+//////// CONTACT SECTION ///////
+
+.contact {
+	.contact-p {
+		color: $beige;
+		text-align: center;
+		margin: 10px 10px 30px 10px;
+	}
+	.github-icon {
+		color: $php;
+	}
+	.linkedin-icon {
+		color: $linkedin;
+	}
+	.contact-icon {
+		display: flex;
+		flex-direction: column;
+		width: 90px;
+		align-items: center;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		list-style-type: none;
+		justify-content: center;
+	}
+	li {
+		margin: 10px;
+	}
+	a	{
+		color: inherit;
+		text-decoration: none;
+		margin-top: 10px;
+	}
+}
+
 ///Responsive ///
 
 	input[type=checkbox]:checked ~ ul {
@@ -674,6 +760,9 @@ footer {
 	}
 	.project_description {
 		grid-column: span 3;
+	}
+	.learn-ul {
+		flex-direction: row;
 	}
 }
 
