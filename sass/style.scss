@@ -414,10 +414,15 @@ footer {
   display: flex;
   flex-direction: column;
 	color : white;
-	h1, h3, p {
+	h1 {
 		margin: 10px 20px;
 	}
+	> h3 {
+		margin: 0 20px;
+	}
   > p {
+		margin: 20px 10px;
+		text-align: center;
     font-size: 1em;
     line-height: 1.5em;
   }
