@@ -427,7 +427,7 @@ footer {
 
 /* line 406, ../sass/style.scss */
 .about_image {
-  background-position: center;
+  background-position: 50% 75%;
   background-size: cover;
   height: 600px;
   background-image: url("../img/test.jpg");
@@ -437,7 +437,7 @@ footer {
 .content-name {
   display: flex;
   flex-direction: column;
-  color: #E3E3E3;
+  color: white;
 }
 /* line 417, ../sass/style.scss */
 .content-name h1, .content-name h3, .content-name p {
@@ -820,29 +820,30 @@ input[type=checkbox]:checked ~ ul li:hover a {
     grid-column: span 2;
   }
 }
-@media screen and (min-width: 646px) {
+@media screen and (max-width: 500px) {
   /* line 758, ../sass/style.scss */
+  .skill .skill-learn ul {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 646px) {
+  /* line 764, ../sass/style.scss */
   .portfolio {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* line 761, ../sass/style.scss */
+  /* line 767, ../sass/style.scss */
   .project_description {
     grid-column: span 3;
   }
-
-  /* line 764, ../sass/style.scss */
-  .learn-ul {
-    flex-direction: row;
-  }
 }
 @media screen and (min-width: 1040px) {
-  /* line 770, ../sass/style.scss */
+  /* line 773, ../sass/style.scss */
   .portfolio {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  /* line 773, ../sass/style.scss */
+  /* line 776, ../sass/style.scss */
   .project_description {
     grid-column: span 4;
   }

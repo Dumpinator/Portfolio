@@ -404,7 +404,7 @@ footer {
 //////// ABOUT SECTION ///////
 
 .about_image {
-	background-position: center;
+	background-position: 50% 75%;
   background-size: cover;
 	height: 600px;
 	background-image: url('../img/test.jpg');
@@ -413,7 +413,7 @@ footer {
 .content-name {
   display: flex;
   flex-direction: column;
-	color : $beige;
+	color : white;
 	h1, h3, p {
 		margin: 10px 20px;
 	}
@@ -705,7 +705,7 @@ footer {
 
 ///Responsive ///
 
-	input[type=checkbox]:checked ~ ul {
+input[type=checkbox]:checked ~ ul {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -754,15 +754,18 @@ footer {
 	}
 }
 
+@media screen and (max-width: 500px){
+	.skill .skill-learn ul {
+		flex-direction: row;
+	}
+}
+
 @media screen and (min-width: 646px) {
 	.portfolio {
 		grid-template-columns: repeat(3, 1fr);
 	}
 	.project_description {
 		grid-column: span 3;
-	}
-	.learn-ul {
-		flex-direction: row;
 	}
 }
 
