@@ -83,7 +83,7 @@ nav li {
 }
 /* line 92, ../sass/style.scss */
 nav li:hover a {
-  padding: 20px 30px 19px 30px;
+  padding: 18px 30px 20px 30px;
   border-bottom: 2px solid #E3E3E3;
 }
 /* line 97, ../sass/style.scss */
