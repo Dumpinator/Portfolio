@@ -76,15 +76,21 @@ class Portfolio {
 //////// FRONT ////////
 
 window.sr = ScrollReveal({ reset: true });
+
+function animCallback (el) {
+		el.classList.add("disable")
+		let toto = el.nextElementSibling
+		toto.classList.remove("disable")
+}
+
+function resetCallback (el) {
+	el.classList.remove("disable")
+	let toto = el.nextElementSibling
+	toto.classList.add("disable")
+}
 sr.reveal('.js-message-1', { origin: 'left',
-										duration: 1900 });
-sr.reveal('.js-message-2', { origin: 'left',
-										duration: 50,
-										delay: 2000 });
-
-
-
-
-
+														duration: 1900,
+														afterReveal: animCallback,
+													 	beforeReset: resetCallback });
 
 new Portfolio ('#js-portfolio')
