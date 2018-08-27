@@ -73,6 +73,58 @@ class Portfolio {
 	}
 }
 
+
+
+const project1 = {
+	src: 'img/p1.jpg',
+	date: '2016',
+	name: 'Becoast',
+	title: 'One Page',
+	generateTag: {
+		link: 'https://getbootstrap.com',
+		name: 'Bootstrap' },
+	titleDescription: 'Landing Page pour Becoast',
+	paraDescription: `Site internet réaliser pour le lancement du MVP pour le concept d'application de Becoast, un One Page responsive
+		 et efficace qui permettait d'avoir un CTA pour une carte météo dynamique.`,
+	linkLanguage: ['HTML','CSS','JS'],
+	linkDescription: 'https://becoast.fr'
+}
+
+const createProjectDiv = proj => {
+	return `
+		<div class="projects js-item ">
+			<img src="${proj.src}" alt="" class="project_img">
+			<h4 class="project_date">${proj.date}</h4>
+			<h2 class="project_name">${proj.name}</h2>
+			<div class="project_title">${proj.title}</div>
+			<div class="project_tag">
+				<ul>
+						<li><a target="_blank" href="${proj.generateTag.link}" class="tag tag-bootstrap">${proj.generateTag.name}</a></li>
+				</ul>
+			</div>
+			<div class="project_description js-body">
+					<h3>${proj.titleDescription}</h3>
+					<p>${proj.paraDescription}</p>
+					<div class="project_tag">
+							<ul>
+									<li><a href="#" class="tag tag-html">${proj.linkLanguage[0]}</a></li>
+									<li><a href="#" class="tag tag-css">${proj.linkLanguage[1]}</a></li>
+									<li><a href="#" class="tag tag-js">${proj.linkLanguage[2]}</a></li>
+							</ul>
+					</div>
+					<div class="link">
+							<a target="_blank" href="${proj.linkDescription}"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
+					</div>
+			</div>
+		</div>
+	`
+}
+
+const projetGenerator = document.getElementById('js-portfolio')
+projetGenerator.innerHTML = createProjectDiv(project1)
+
+
+
 //////// FRONT ////////
 
 window.sr = ScrollReveal({ reset: true });
