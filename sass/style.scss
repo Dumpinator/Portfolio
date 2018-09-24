@@ -16,6 +16,7 @@ $oclock1 : #fffcda;
 $sololearn : #1abc9c;
 $linkedin : #0476b3;
 $codecademy : #F65A5B;
+$codewars : #912c22;
 // language colors
 $html : #ff8c4e;
 $css : #3899d4;
@@ -525,7 +526,8 @@ footer {
 				display: flex;
 				align-items: center;
 		    margin: 20px;
-        max-width: 260px;
+        max-width: 300px;
+
 	     }
 	  .flex-container {
       padding: 0;
@@ -554,19 +556,18 @@ footer {
  	   }
 
 		.skill-learn {
-
 			.learn-icon {
 				display: flex;
-		    flex-direction: column;
+		    flex-direction: row;
 		    width: 90px;
-		    align-items: center;
+		    justify-content: center;
 			}
 
 			ul {
 		 		margin: 0;
 		 		padding: 0;
 		 		display: flex;
-		 		flex-direction: column;
+		 		flex-direction: row;
 		 		list-style-type: none;
 		 	}
 		 	li {
@@ -582,6 +583,9 @@ footer {
 			}
 			.codecademy-icon {
 				color: $codecademy;
+			}
+			.codewars-icon {
+				color: $codewars;
 			}
 	 	}
 
@@ -772,7 +776,7 @@ input[type=checkbox]:checked ~ ul {
 
 @media screen and (max-width: 500px){
 	.skill .skill-learn ul {
-		flex-direction: row;
+		flex-direction: column;
 	}
 }
 

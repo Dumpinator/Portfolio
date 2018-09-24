@@ -121,7 +121,7 @@ const projects = [
 		linkLanguage: ['HTML','CSS','JS'],
 		linkDescription: 'https://becoast.fr'
 	}
-/*
+	/*
 	,
 	{
 		src: 'img/p1.jpg',
