@@ -559,10 +559,11 @@ footer {
 			.learn-icon {
 				display: flex;
 		    flex-direction: row;
-		    width: 90px;
 		    justify-content: center;
+				img {
+					width: 60px;
+				}
 			}
-
 			ul {
 		 		margin: 0;
 		 		padding: 0;
@@ -588,7 +589,6 @@ footer {
 				color: $codewars;
 			}
 	 	}
-
 }
 
 .prog-html {

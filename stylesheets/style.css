@@ -602,10 +602,13 @@ footer {
 .skill .skill-learn .learn-icon {
   display: flex;
   flex-direction: row;
-  width: 90px;
   justify-content: center;
 }
-/* line 566, ../sass/style.scss */
+/* line 563, ../sass/style.scss */
+.skill .skill-learn .learn-icon img {
+  width: 60px;
+}
+/* line 567, ../sass/style.scss */
 .skill .skill-learn ul {
   margin: 0;
   padding: 0;
@@ -613,25 +616,25 @@ footer {
   flex-direction: row;
   list-style-type: none;
 }
-/* line 573, ../sass/style.scss */
+/* line 574, ../sass/style.scss */
 .skill .skill-learn li {
   margin: 10px;
 }
-/* line 576, ../sass/style.scss */
+/* line 577, ../sass/style.scss */
 .skill .skill-learn a {
   color: inherit;
   text-decoration: none;
   text-align: center;
 }
-/* line 581, ../sass/style.scss */
+/* line 582, ../sass/style.scss */
 .skill .skill-learn .sololearn-icon {
   color: #1abc9c;
 }
-/* line 584, ../sass/style.scss */
+/* line 585, ../sass/style.scss */
 .skill .skill-learn .codecademy-icon {
   color: #F65A5B;
 }
-/* line 587, ../sass/style.scss */
+/* line 588, ../sass/style.scss */
 .skill .skill-learn .codewars-icon {
   color: #912c22;
 }
