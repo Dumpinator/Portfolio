@@ -5,6 +5,7 @@
      * @param {Number} duration
      * @returns {Promise<boolean>}
      */
+
   export function slideUp (element, duration = 500) {
     return new Promise(function (resolve, reject) {
       element.style.height = element.offsetHeight + 'px'
