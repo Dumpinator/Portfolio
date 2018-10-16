@@ -1,6 +1,6 @@
 export default [{
   "src": "img/p1.jpg",
-  "date": "2016",
+  "date": "2018",
   "name": "Becoast",
   "title": "One Page",
   "generateTag": {
