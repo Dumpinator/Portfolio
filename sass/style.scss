@@ -285,7 +285,7 @@ footer {
   		text-decoration: none;
   		-webkit-transition: color 0.2s;
 			&:hover {
-  			color: $beige;
+				color: $beige;
 				&.tag-html {
 					background-color: $html;
 				}
@@ -313,6 +313,11 @@ footer {
 		}
 		.tag-js {
 			color: $js;
+			&:hover {
+				&.tag-js {
+					color: $html;
+				}
+			}
 		}
 		.tag-bootstrap {
 			color: $bootstrap;

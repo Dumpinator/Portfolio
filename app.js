@@ -43,6 +43,20 @@ class Portfolio {
 }
 
 const createProjectTemplate = projectType => {
+
+	function generateLi(arg){
+	
+		let result = ""
+		const tempnb = projectType.generateTag.name
+		const nb = tempnb.length
+
+		for (var i = 0; i < nb; i++) {
+			result += `<li><a target="_blank" href="${projectType.generateTag.link[i] ? projectType.generateTag.link[i] : "#"}" class="tag tag-${projectType.generateTag.cssColor[i].toLowerCase()}">${projectType.generateTag.name ? projectType.generateTag.name[i] : "debug"}</a></li>`
+			nb[i]
+		}
+		return result
+	}
+
 	return `
 		<div class="projects js-item ">
 			<img src="${projectType.src}" alt="" class="project_img">
@@ -51,7 +65,7 @@ const createProjectTemplate = projectType => {
 			<div class="project_title">${projectType.title}</div>
 			<div class="project_tag">
 				<ul>
-						<li><a target="_blank" href="${projectType.generateTag.link}" class="tag tag-bootstrap">${projectType.generateTag.name}</a></li>
+					${generateLi( Object.values(projectType.generateTag) )}
 				</ul>
 			</div>
 			<div class="project_description js-body">
