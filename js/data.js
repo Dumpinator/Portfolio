@@ -6,7 +6,7 @@ export default [{
   "generateTag": {
     "link": ["https://getbootstrap.com"],
     "name": ["Bootstrap"],
-    "cssColor": ["Bootstrap"] },
+    "cssColor": ["bootstrap"] },
   "titleDescription": "Landing Page pour Becoast",
   "paraDescription": "Site internet réaliser pour le lancement du MVP pour le concept d'application de Becoast, un One Page responsive et efficace qui permettait d'avoir un CTA pour une carte météo dynamique.",
   "linkLanguage": ["HTML","CSS","JS"],
@@ -20,7 +20,7 @@ export default [{
   "generateTag": {
     "name": ["Fetch API","JS"],
     "link": ["https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API","https://developer.mozilla.org/fr/docs/Web/JavaScript"],
-    "cssColor": ["JS","JS"] },
+    "cssColor": ["js","js"] },
   "titleDescription": "Manipulation de data depuis une URL",
   "paraDescription": "Récupération de données depuis une URL avec la méthode fetch et injection de ces données dans une template string",
   "linkLanguage": ["HTML","CSS","JS"],
