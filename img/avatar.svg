@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <circle id="Oval" fill="#505c91" cx="32" cy="32" r="32"></circle>
+            <circle id="Oval-2-Copy-3" fill="#4A4A4A" cx="32" cy="32" r="10"></circle>
+            <path d="M32,45 C24.8202983,45 19,39.1797017 19,32 C19,24.8202983 24.8202983,19 32,19 C39.1797017,19 45,24.8202983 45,32 C45,39.1797017 39.1797017,45 32,45 Z M32,42 C37.5228475,42 42,37.5228475 42,32 C42,26.4771525 37.5228475,22 32,22 C26.4771525,22 22,26.4771525 22,32 C22,37.5228475 26.4771525,42 32,42 Z" id="Combined-Shape" fill="#000000"></path>
+            <circle id="Oval-2-Copy" fill="#1EF3F1" cx="32" cy="32" r="9"></circle>
+            <path d="M40,32.9294825 C40,26.9764942 37.12,24 31.36,24 C28.5578701,24 32.2388252,25.1949371 35,28 C37.9146387,30.9609661 40,35.4769603 40,32.9294825 Z" id="Oval-2-Copy" fill="#FFFFFF"></path>
+            <circle id="Oval-2" fill="#000000" cx="48.5" cy="24.5" r="2.5"></circle>
+            <circle id="Oval-2-Copy-2" fill="#DA1D2B" cx="48.5" cy="24.5" r="1.5"></circle>
+        </g>
+    </g>
+</svg>
