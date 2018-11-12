@@ -22,7 +22,7 @@ export default [{
     "link": ["https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API","https://developer.mozilla.org/fr/docs/Web/JavaScript"],
     "cssColor": ["js","js"] },
   "titleDescription": "Manipulation de data depuis une URL",
-  "paraDescription": "Récupération de données depuis une URL avec la méthode fetch et injection de ces données dans une template string",
+  "paraDescription": "- Récupération de données depuis une URL avec la méthode fetch<br> - injection de ces données dans le DOM avec une template string<br> - Mise en place d'un filtre par espèces : [ Human, Droid, Other et All ]",
   "linkLanguage": ["HTML","CSS","JS"],
   "linkDescription": "https://dumpinator.github.io/StarWarsAcademy/"
 }]

@@ -38,6 +38,11 @@ $vanilla: #e6d9a7;
 	animation: $name $duration $timing $state;
 }
 
+@font-face {
+	font-family: 'GROBOLD';
+	src: url(../Font/GROBOLD.ttf) format('truetype');
+}
+
 /// color for language skill
 .tag-html {
 	color: $html;
@@ -147,12 +152,12 @@ footer {
 }
 
 .message .text {
-	font-family: 'Nunito', cursive;
+	font-family: 'GROBOLD','Nunito', cursive;
 	background: $beige;
 	color: $grey1;
-	box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 3px 8px 0 rgba(0,0,0,0.3);
 	border-radius: 8px 8px 8px 0;
-	padding: 10px 20px;
+	padding: 15px 20px;
 	text-align: left;
 	margin: 10px;
 }
