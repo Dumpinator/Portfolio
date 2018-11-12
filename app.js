@@ -81,10 +81,12 @@ const createProjectTemplate = projectType => {
 		</div>
 	`
 }
+
 /// injection projects html ///
+new Portfolio ('#js-portfolio')
 const projectDivContainer = document.getElementById('js-portfolio')
 projectDivContainer.innerHTML = projects.map(createProjectTemplate).join("")
-
+new Portfolio ('#js-portfolio')
 
 //////// FRONT ////////
 
@@ -105,4 +107,4 @@ sr.reveal('.js-message-1', { origin: 'left',
 														afterReveal: animCallback,
 													 	beforeReset: resetCallback });
 
-new Portfolio ('#js-portfolio')
+//new Portfolio ('#js-portfolio')
