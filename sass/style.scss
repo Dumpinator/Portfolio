@@ -28,6 +28,11 @@ $sass: #cb689a;
 $compass: #fc272b;
 $gulp: #d04546;
 $vanilla: #e6d9a7;
+$meteor: #E04E4B;
+$blazejs: #ff840e;
+$heroku: #79589f;
+$mongodb: #69b241;
+$github: #222;
 /// General ///
 
 @mixin animation ($name, $duration, $timing, $state) {
@@ -322,7 +327,53 @@ footer {
 			color: $js;
 			&:hover {
 				&.tag-js {
-					color: $html;
+					color: $meteor;
+					background-color: $js;
+				}
+			}
+		}
+		.tag-meteor {
+			color: $meteor;
+			&:hover {
+				&.tag-meteor {
+					color: #FFF;
+					background-color: $meteor;
+				}
+			}
+		}
+		.tag-blazejs {
+			color: $blazejs;
+			&:hover {
+				&.tag-blazejs {
+					color: #FFF;
+					background-color: $blazejs;
+				}
+			}
+		}
+		.tag-mongodb {
+			color: $mongodb;
+			&:hover {
+				&.tag-mongodb {
+					color: #FFF;
+					background-color: $mongodb;
+				}
+			}
+		}
+		.tag-heroku {
+			color: $heroku;
+			&:hover {
+				&.tag-heroku {
+					color: #FFF;
+					background-color: $heroku;
+				}
+			}
+		}
+		.tag-github {
+			color: #FFF;
+			&:hover {
+				&.tag-github {
+					color: #FFF;
+					background-color: $github;
 				}
 			}
 		}
@@ -442,19 +493,13 @@ footer {
   display: flex;
   flex-direction: column;
 	color : white;
-	h1 {
-		margin: 10px 20px;
+	h1, h3 {
+		font-family: sans-serif;
+		margin: 10px 0 0 20px;
 	}
-	> h3 {
-		margin: 0 20px;
-	}
-  > p {
-		margin: 20px 10px;
-		text-align: center;
-    font-size: 1em;
-    line-height: 1.5em;
-  }
-	.about-des {
+	.about-des p{
+		color: #FFF;
+		font-size: 1.2em;
 		text-align: center;
 		align-self: center;
 		margin: 20px;
