@@ -35,6 +35,10 @@ $mongodb: #69b241;
 $github: #222;
 /// General ///
 
+html {
+	scroll-behavior: smooth;
+}
+
 @mixin animation ($name, $duration, $timing, $state) {
 	-webkit-animation: $name $duration $timing $state;
 	-moz-animation: $name $duration $timing $state;
