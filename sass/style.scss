@@ -86,6 +86,9 @@ html {
 .tag-meteor {
   color: $meteor;
 }
+.tag-mongodb {
+	color: $mongodb;
+}
 
 body {
 	background-color: $grey1;
@@ -350,6 +353,15 @@ footer {
 				}
 			}
 		}
+		.tag-mongodb {
+			color: $mongodb;
+			&:hover {
+				&.tag-mongodb {
+					color: #FFF;
+					background-color: $mongodb;
+				}
+			}
+		}
 		.tag-blazejs {
 			color: $blazejs;
 			&:hover {
@@ -584,6 +596,9 @@ footer {
     }
 		&.tag-meteor {
       background-color: $meteor;
+    }
+		&.tag-mongodb {
+      background-color: $mongodb;
     }
   }
 }
