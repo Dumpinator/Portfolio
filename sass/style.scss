@@ -33,6 +33,7 @@ $blazejs: #ff840e;
 $heroku: #79589f;
 $mongodb: #69b241;
 $github: #222;
+$mysql: #f29123;
 /// General ///
 
 html {
@@ -88,6 +89,9 @@ html {
 }
 .tag-mongodb {
 	color: $mongodb;
+}
+.tag-mysql {
+	color: $mysql;
 }
 
 body {
@@ -490,6 +494,9 @@ footer {
 		&:hover {
 			color: $grey3;
 		}
+		>a {
+			margin: 0 1em;
+		}
 	}
 }
 
@@ -786,11 +793,11 @@ footer {
 	.github-icon {
 		color: $php;
 	}
+	.cv-icon {
+		color: $mongodb;
+	}
 	.linkedin-icon {
 		color: $linkedin;
-	}
-	.contact-icon {
-
 	}
 	ul {
 		margin: 0;

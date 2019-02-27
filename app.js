@@ -75,7 +75,8 @@ const createProjectTemplate = projectType => {
 							</ul>
 					</div>
 					<div class="link">
-							<a target="_blank" href="${projectType.linkDescription}"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
+						<a target="_blank" href="${projectType.linkDescription[0]}"><i class="fab fa-github-alt fa-2x"></i></a>
+						<a target="_blank" href="${projectType.linkDescription[1]}"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
 					</div>
 			</div>
 		</div>

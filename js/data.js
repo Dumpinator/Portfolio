@@ -10,13 +10,13 @@ export default [{
   "titleDescription": "Landing Page pour Becoast",
   "paraDescription": "Site internet réaliser pour le lancement du MVP pour le concept d'application de Becoast, un One Page responsive et efficace qui permettait d'avoir un CTA pour une carte météo dynamique.",
   "linkLanguage": ["HTML","CSS","JS"],
-  "linkDescription": "https://becoast.fr"
+  "linkDescription": ["https://github.com/Dumpinator","https://becoast.fr"]
 },
 {
   "src": "img/p2.jpg",
   "date": "2018",
   "name": "Star Wars Academy",
-  "title": "Glossaire des personnages",
+  "title": "Glossaire",
   "generateTag": {
     "name": ["Fetch API", "Github Pages"],
     "link": ["https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API","https://pages.github.com/"],
@@ -24,19 +24,19 @@ export default [{
   "titleDescription": "Manipulation de data depuis une URL",
   "paraDescription": "- Récupération de données depuis une URL avec la méthode fetch<br> - injection de ces données dans le DOM avec une template string<br> - Mise en place d'un filtre par espèces : [ Human, Droid, Other et All ]",
   "linkLanguage": ["HTML","CSS","JS"],
-  "linkDescription": "https://dumpinator.github.io/StarWarsAcademy/"
+  "linkDescription": ["https://github.com/Dumpinator/StarWarsAcademy","https://dumpinator.github.io/StarWarsAcademy/"]
 },
 {
   "src": "img/p3.jpg",
   "date": "2019",
-  "name": "Golden Wall",
-  "title": "Mur à la Twitter",
+  "name": "Twitter Wall",
+  "title": "CRUD",
   "generateTag": {
     "name": ["MeteorJS","BlazeJS","Bootstrap","MongoDB","Heroku"],
     "link": ["https://www.meteor.com/","http://blazejs.org/","https://getbootstrap.com","https://docs.mongodb.com/","https://dashboard.heroku.com/"],
     "cssColor": ["meteor","blazejs","bootstrap","mongodb","heroku"] },
   "titleDescription": "Exercice de CRUD",
-  "paraDescription": "- Create, Read, Update, Delete <br> - Prise en main de MeteorJS <br> - Templating avec BlazeJS <br> - Gestion utilisateur sur MongoDB",
+  "paraDescription": "- Create, Read, Update, Delete <br> - Prise en main de MeteorJS <br> - Templating avec BlazeJS <br> - Gestion utilisateur sur MongoDB <br><br> Héberger sur Heroku, être insistant car le serveur s'endort rapidement (version gratuite)",
   "linkLanguage": ["HTML","CSS","JS"],
-  "linkDescription": "https://golden-wall.herokuapp.com/"
+  "linkDescription": ["https://github.com/Dumpinator/golden-wall","https://golden-wall.herokuapp.com/"]
 }]
