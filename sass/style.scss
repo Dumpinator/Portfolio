@@ -606,6 +606,9 @@ footer {
     }
 		&.tag-mongodb {
       background-color: $mongodb;
+		}
+		&.tag-mysql {
+      background-color: $mysql;
     }
   }
 }
