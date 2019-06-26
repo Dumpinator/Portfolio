@@ -17,6 +17,7 @@ $sololearn : #1abc9c;
 $linkedin : #0476b3;
 $codecademy : #F65A5B;
 $codewars : #912c22;
+$ipssi : #007cc1;
 // language colors
 $html : #ff8c4e;
 $css : #3899d4;
@@ -534,17 +535,17 @@ footer {
 	}
 }
 
-.p-oclock {
+.p-ipssi {
     background-color: $grey3;
     padding: 10px;
     p {
 			line-height: 1.75;
       text-align: center;
-      color: $oclock1;
+      color: #FFF;
     }
   }
 
-.oclock {
+.ipssi {
     margin-left: 2px;
     padding: 3px 10px;
     font-family: 'futurama', sans-serif;
@@ -552,11 +553,11 @@ footer {
     border-radius: 15px;
     -webkit-transition: color 0.2s;
     text-decoration: none;
-    background-color: $oclock;
+    background-color: $ipssi;
     color: $oclock1;
     &:hover {
-      background-color: $oclock1;
-      color: $oclock;
+      background-color: #fff;
+      color: $ipssi;
     }
 }
 
