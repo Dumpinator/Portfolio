@@ -39,4 +39,18 @@ export default [{
   "paraDescription": "- Create, Read, Update, Delete <br> - Prise en main de MeteorJS <br> - Templating avec BlazeJS <br> - Gestion utilisateur sur MongoDB <br><br> Héberger sur Heroku, être insistant car le serveur s'endort rapidement (version gratuite)",
   "linkLanguage": ["HTML","CSS","JS"],
   "linkDescription": ["https://github.com/Dumpinator/golden-wall","https://golden-wall.herokuapp.com/"]
+},
+{
+  "src": "img/p4.jpg",
+  "date": "2020",
+  "name": "ToDo App",
+  "title": "Vanilla JS",
+  "generateTag": {
+    "name": ["Github Pages"],
+    "link": ["https://pages.github.com/"],
+    "cssColor": ["github"] },
+  "titleDescription": "Création d'une Todo App",
+  "paraDescription": "Manipulation du DOM en Vanilla JS et sauvegarde des données en local storage",
+  "linkLanguage": ["HTML","CSS","JS"],
+  "linkDescription": ["https://github.com/Dumpinator/ToDoApp","https://dumpinator.github.io/ToDoApp/"]
 }]
