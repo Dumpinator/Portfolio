@@ -52,5 +52,5 @@ export default [{
   "titleDescription": "Création d'une Todo App",
   "paraDescription": "Manipulation du DOM en Vanilla JS et sauvegarde des données en local storage",
   "linkLanguage": ["HTML","CSS","JS"],
-  "linkDescription": ["https://github.com/Dumpinator/ToDoApp","https://dumpinator.github.io/ToDoApp/"]
+  "linkDescription": ["https://dumpinator.github.io/To-Day-App/","https://dumpinator.github.io/To-Day-App/"]
 }]
