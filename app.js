@@ -91,21 +91,23 @@ new Portfolio ('#js-portfolio')
 
 //////// FRONT ////////
 
-window.sr = ScrollReveal({ reset: true });
+// Typo dynamique
+document.addEventListener('DOMContentLoaded', function () {
+	// Typed lib
+	const section1 = {
+		strings: ["Projects", "Learning", "New Techno"],
+		typeSpeed: 80,
+		loop: true
+	}
 
-function animCallback (el) {
-		el.classList.add("disable")
-		let toto = el.nextElementSibling
-		toto.classList.remove("disable")
-}
-function resetCallback (el) {
-	el.classList.remove("disable")
-	let toto = el.nextElementSibling
-	toto.classList.add("disable")
-}
-sr.reveal('.js-message-1', { origin: 'left',
-														duration: 1900,
-														afterReveal: animCallback,
-													 	beforeReset: resetCallback });
+	const section2 = {
+		strings: ["Autodidact", "Geek", "Tech watch"],
+		typeSpeed: 80,
+		loop: true
+	}
+
+	new Typed(".element1", section1);
+	new Typed(".element2", section2);
+})
 
 //new Portfolio ('#js-portfolio')

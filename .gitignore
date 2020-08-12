@@ -3,3 +3,5 @@ style.css.map
 *.map
 node_modules/*
 .DS_Store
+PSD/*
+.psd
