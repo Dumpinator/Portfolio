@@ -52,21 +52,20 @@ export default [{
   "titleDescription": "Création d'une Todo App",
   "paraDescription": "Manipulation du DOM en Vanilla JS et sauvegarde des données en local storage",
   "linkLanguage": ["HTML","CSS","JS"],
-  "linkDescription": ["https://dumpinator.github.io/To-Day-App/","https://dumpinator.github.io/To-Day-App/"
+  "linkDescription": ["https://dumpinator.github.io/To-Day-App/","https://dumpinator.github.io/To-Day-App/"]
 },
-  {
-    "src": "img/p5.jpg",
-    "date": "2020",
-    "name": "Runtour ",
-    "title": "Fullstack JS",
-    "generateTag": {
-      "name": ["Github Pages"],
-      "link": ["https://pages.github.com/"],
-      "cssColor": ["github"]
-    },
-    "titleDescription": "Création d'un site web de voyage et d'une API web",
-    "paraDescription": "blablabla",
-    "linkLanguage": ["HTML", "CSS", "JS"],
-    "linkDescription": ["https://dumpinator.github.io/", "https://runtours.herokuapp.com/"
-},
-]
+{
+  "src": "img/p5.jpg",
+  "date": "2020",
+  "name": "Runtour ",
+  "title": "Fullstack JS",
+  "generateTag": {
+    "name": ["Github Pages"],
+    "link": ["https://pages.github.com/"],
+    "cssColor": ["github"]
+  },
+  "titleDescription": "Création d'un site web de voyage et d'une API web",
+  "paraDescription": "blablabla",
+  "linkLanguage": ["HTML", "CSS", "JS"],
+  "linkDescription": ["https://dumpinator.github.io/", "https://runtours.herokuapp.com/"]
+}]
