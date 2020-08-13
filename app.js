@@ -106,8 +106,15 @@ document.addEventListener('DOMContentLoaded', function () {
 		loop: true
 	}
 
+	const section3 = {
+		strings: ["Contact", "CV", "Social"],
+		typeSpeed: 80,
+		loop: true
+	}
+
 	new Typed(".element1", section1);
 	new Typed(".element2", section2);
+	new Typed(".element3", section3);
 })
 
 //new Portfolio ('#js-portfolio')
