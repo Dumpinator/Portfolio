@@ -34,7 +34,8 @@ export default [{
   "generateTag": {
     "name": ["MeteorJS","BlazeJS","Bootstrap","MongoDB","Heroku"],
     "link": ["https://www.meteor.com/","http://blazejs.org/","https://getbootstrap.com","https://docs.mongodb.com/","https://dashboard.heroku.com/"],
-    "cssColor": ["meteor","blazejs","bootstrap","mongodb","heroku"] },
+    "cssColor": ["meteor","blazejs","bootstrap","mongodb","heroku"] 
+  },
   "titleDescription": "Exercice de CRUD",
   "paraDescription": "- Create, Read, Update, Delete <br> - Prise en main de MeteorJS <br> - Templating avec BlazeJS <br> - Gestion utilisateur sur MongoDB <br><br> Héberger sur Heroku, être insistant car le serveur s'endort rapidement (version gratuite)",
   "linkLanguage": ["HTML","CSS","JS"],
@@ -57,15 +58,15 @@ export default [{
 {
   "src": "img/p5.jpg",
   "date": "2020",
-  "name": "Runtour ",
-  "title": "Fullstack JS",
+  "name": "Runtour",
+  "title": "Fullstack Project JS",
   "generateTag": {
-    "name": ["Github Pages"],
-    "link": ["https://pages.github.com/"],
-    "cssColor": ["github"]
+    "name": ["NodeJS", "PUG", "JWT", "MongoDB", "Heroku"],
+    "link": ["https://nodejs.org/en/","https://pugjs.org/api/getting-started.html","https://jwt.io/","https://www.mongodb.com/cloud/atlas", "https://dashboard.heroku.com/"],
+    "cssColor": ["mongodb", "meteor", "blazejs", "mongodb", "heroku"]
   },
   "titleDescription": "Création d'un site web de voyage et d'une API web",
-  "paraDescription": "blablabla",
+  "paraDescription": "Learning backend with JS",
   "linkLanguage": ["HTML", "CSS", "JS"],
   "linkDescription": ["https://dumpinator.github.io/", "https://runtours.herokuapp.com/"]
 }]
