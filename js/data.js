@@ -1,20 +1,7 @@
-export default [{
-  "src": "img/p1.jpg",
-  "date": "2018",
-  "name": "Becoast",
-  "title": "One Page",
-  "generateTag": {
-    "link": ["https://getbootstrap.com"],
-    "name": ["Bootstrap"],
-    "cssColor": ["bootstrap"] },
-  "titleDescription": "Landing Page pour Becoast",
-  "paraDescription": "Site internet réaliser pour le lancement du MVP pour le concept d'application de Becoast, un One Page responsive et efficace qui permettait d'avoir un CTA pour une carte météo dynamique.",
-  "linkLanguage": ["HTML","CSS","JS"],
-  "linkDescription": ["https://github.com/Dumpinator","https://becoast.fr"]
-},
+export default [
 {
   "src": "img/p2.jpg",
-  "date": "2018",
+  "date": "2019",
   "name": "Star Wars Academy",
   "title": "Glossaire",
   "generateTag": {
@@ -65,8 +52,24 @@ export default [{
     "link": ["https://nodejs.org/en/","https://pugjs.org/api/getting-started.html","https://jwt.io/","https://www.mongodb.com/cloud/atlas", "https://dashboard.heroku.com/"],
     "cssColor": ["mongodb", "meteor", "blazejs", "mongodb", "heroku"]
   },
-  "titleDescription": "Création d'un site web de voyage et d'une API web",
-  "paraDescription": "Learning backend with JS",
+  "titleDescription": "Création d'un site web de voyage et d'une API web avec NodeJS",
+  "paraDescription": "- API REST JSON <br> - NodeJS & Express <br> - Templating avec PUG <br> - JWT token <br> - Envoi de mail avec Nodemailer <br><br> Héberger sur Heroku",
   "linkLanguage": ["HTML", "CSS", "JS"],
   "linkDescription": ["https://dumpinator.github.io/", "https://runtours.herokuapp.com/"]
-}]
+},
+{
+  "src": "img/p1.jpg",
+  "date": "2020",
+  "name": "Bigscreen",
+  "title": "School Project",
+  "generateTag": {
+    "name": ["React", "Laravel", "ChartJS", "GridJS"],
+    "link": ["https://reactjs.org/", "https://laravel.com/", "https://www.chartjs.org/", "https://gridjs.io/"],
+    "cssColor": ["mongodb", "meteor", "blazejs", "mongodb"]
+  },
+  "titleDescription": "Création d'un sondage en ligne avec visualisation des datas",
+  "paraDescription": "- API REST JSON sur Laravel 5.8 <br> - Création du front avec React 16 (Hook) <br> - Visualisation des données avec ChartJS <br><br>",
+  "linkLanguage": ["CSS", "JS", "PHP"],
+  "linkDescription": ["https://github.com/Dumpinator/ProjectFinalEC", "https://github.com/Dumpinator/ProjectFinalEC"]
+}
+]

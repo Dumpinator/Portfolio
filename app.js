@@ -48,7 +48,6 @@ const createProjectTemplate = projectType => {
 		let result = ""
 		for (var i = 0; i < nb.length; i++) {
 			result += `<li><a target="_blank" href="${projectType.generateTag.link[i] ? projectType.generateTag.link[i] : "#"}" class="tag tag-${projectType.generateTag.cssColor[i]}">${projectType.generateTag.name ? projectType.generateTag.name[i] : "debug"}</a></li>`
-			nb[i]
 		}
 		return result
 	}
